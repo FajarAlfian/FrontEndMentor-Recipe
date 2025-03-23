@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--White: hsl(0, 0%, 100%);
+
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+
+--Brown-800: hsl(14, 45%, 36%);
+
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    background-color: var(--Stone-100);
+}
+
+.container {
+    max-width: 80vh;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
+}
+
+.div-title {
+    color: var(--Brown-800);
+    padding-bottom: 15px;
+}
+
+li::marker{
+    color: var(--Rose-800);
+    font-size: 10px
+}
+ 
+
+/* Title style */
+.container .image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.container .main-title {
+    max-width: 100vh;
+    text-align: left;
+}
+
+.container .main-title .title {
+    padding: 10px;
+}
+
+.container .main-title .subtitle {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+/* Preparation styke */
+.container .preparation {
+    padding: 10px;
+    margin: 10px;
+}
+
+.container .preparation .preparation-ul {
+    margin: 10px 0 0 20px;
+    font-size: 13px;
+    color: var(--Stone-600);
+}
+
+.container .preparation .preparation-time {
+    font-size: 16px;
+    color: var(--Rose-800);
+}
+
+/* Ingredient style */
+.container .ingredient {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px var(--Stone-900);
+}
+
+.container .ingredient .ingredient-list {
+    color: var(--Stone-900);
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+/* Instruction style */
+.instruction .instruction-list {
+    color: var(--Stone-900);
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.instruction .instruction-list::marker {
+    font-size: 14px;
+    font-weight: 600;
+}
